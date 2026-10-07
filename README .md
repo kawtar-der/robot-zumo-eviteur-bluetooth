@@ -9,7 +9,7 @@ Projet du module **Robotique** (Master ISOC) : un robot mobile basé sur **Ardui
 
 ## Fonctionnement
 
-### 1. Évitement d'obstacles (`evitement_obstacles`)
+### 1. Évitement d'obstacles (`eviteur_obstacles`)
 Le robot mesure en continu la distance devant lui :
 - **Plus de 20 cm** : il avance à vitesse constante.
 - **Moins de 20 cm** : il s'arrête, pivote sur place vers la gauche (400 ms), puis repart.
@@ -53,7 +53,7 @@ Les moteurs sont pilotés par le Zumo Shield via la bibliothèque `ZumoMotors`. 
 
 1. Installer l'[Arduino IDE](https://www.arduino.cc/en/software).
 2. Installer la bibliothèque **ZumoShield** de Pololu (`Croquis > Inclure une bibliothèque > Gérer les bibliothèques`, chercher *ZumoShield*). Elle contient `ZumoMotors`. `SoftwareSerial` est déjà incluse.
-3. Ouvrir `evitement_obstacles/evitement_obstacles.ino` ou `controle_bluetooth/controle_bluetooth.ino`.
+3. Ouvrir `eviteur_obstacles/eviteur_obstacles.ino` ou `controle_bluetooth/controle_bluetooth.ino`.
 4. Choisir la carte **Arduino Uno** et téléverser.
 
 ## Utilisation
@@ -78,7 +78,7 @@ Les moteurs sont pilotés par le Zumo Shield via la bibliothèque `ZumoMotors`. 
 
 ```
 robot-zumo/
-├── evitement_obstacles/evitement_obstacles.ino
+├── eviteur_obstacles/eviteur_obstacles.ino
 ├── controle_bluetooth/controle_bluetooth.ino
 ├── .gitignore
 └── README.md
